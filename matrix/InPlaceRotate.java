@@ -17,8 +17,7 @@ public class InPlaceRotate {
 	}
 	
 	public static void inPlaceRotateClockwise(int mat[][], int result[][], int rowSize, int colSize) {
-		
-		
+		// in this case column becomes row and vice-versa
 		for (int currRowIndex=0; currRowIndex < rowSize; ++currRowIndex)
 			for(int currColIndex=0; currColIndex < colSize; ++currColIndex)
 				result[currRowIndex][currColIndex] = mat[currColIndex][currRowIndex];
